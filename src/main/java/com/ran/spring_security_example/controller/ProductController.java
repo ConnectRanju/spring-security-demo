@@ -16,6 +16,7 @@ public class ProductController {
 
 @Autowired
     private ProductService service;
+    /* welcome page for all users.*/
  @GetMapping("/welcome")
     public String welcome(){
      return " Welcome to this end point. It is not secured !!!";
