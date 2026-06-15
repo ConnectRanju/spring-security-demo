@@ -27,7 +27,7 @@ public class ProductController {
     public List<Product> getAllTheProducts() {
         return service.getProducts();
     }
-
+    /* Enabled spring security.*/
  @GetMapping("/{id}")
  @PreAuthorize("hasAuthority('USER')")
     public Product getProductById(@PathVariable int id){
